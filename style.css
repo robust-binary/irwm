@@ -19,7 +19,7 @@
   --fw-700: 700;
   --clr-bg: rgb(248, 247, 243);
 }
-body {
+body, html {
   overflow-x: hidden;
 }
 
