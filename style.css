@@ -265,7 +265,7 @@ a {
   /* max-width: 81rem; */ /* max-width is taken from site container */
   /* margin-inline: auto; */ /* this is also take from site container*/
   padding-inline: 1.5rem;
-  border: 3px solid hotpink;
+/*   border: 3px solid hotpink; */
   min-height: 80vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -333,7 +333,7 @@ a {
 .services__design-packages {
   background-color: #fff;
   padding-inline: 1.5rem;
-  border: 3px solid orange;
+/*   border: 3px solid orange; */
   min-height: 80vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -399,7 +399,7 @@ a {
 .services__maintenance-packages {
   background-color: var(--clr-bg);
   padding-inline: 1.5rem;
-  border: 3px solid orange;
+/*   border: 3px solid orange; */
   min-height: 80vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -440,7 +440,7 @@ a {
 }
 
 .portfolio {
-  border: 3px solid purple;
+/*   border: 3px solid purple; */
   background-color: var(--clr-bg);
   min-height: 80vh;
   text-align: center;
@@ -471,7 +471,7 @@ a {
 }
 
 .about {
-  border: 3px solid purple;
+/*   border: 3px solid purple; */
   background-color: #fff;
   min-height: 80vh;
   text-align: center;
@@ -527,6 +527,7 @@ a {
 }
 
 /* ***** FLIP CARD ***** */
+/*
 .flip-card_container {
   max-width: 500px;
   color: white;
@@ -569,3 +570,4 @@ a {
   -moz-box-shadow: 10px 10px 51px -4px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 51px -4px rgba(0, 0, 0, 0.75);
 }
+*/
