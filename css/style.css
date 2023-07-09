@@ -46,6 +46,11 @@ body {
 
 /* MAIN */
 
+.article-1 {
+  container-type: inline-size;
+  container-name: explore-web-design;
+}
+
 .explore-web-design {
   background-color: var(--color-bg-cream);
   display: flex;
@@ -53,8 +58,14 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
-  margin-top: 79px;
+  /* margin-top: 79px; */
   /* max-height: 80vh; */
+}
+
+@container explore-web-design (max-width: 768px) {
+  .explore-web-design {
+    margin-top: 79px;
+  }
 }
 
 .explore-web-design--blurb {
@@ -304,7 +315,7 @@ body {
   line-height: 1.5;
 }
 .about-us .about-us--blurb-info {
-  font-size: 1.2em;
+  font-size: 1rem;
 }
 
 .about-us-button {
@@ -352,14 +363,14 @@ body {
 }
 .discuss-design-deliver--container p {
   text-align: center;
-  margin: 1rem 0;
-  font-size: 1.2em;
+  margin: 2rem auto;
+  /* font-size: 1.2em; */
 }
 
 .discuss-design-deliver--container > hr {
   color: rgba(243, 242, 242, 0.515);
   width: 80%;
-  margin: 4rem auto;
+  margin: 3rem auto 4rem auto;
   border-radius: 10px;
 }
 
@@ -442,165 +453,6 @@ body {
   background-color: rgba(153, 29, 87, 0.673);
   cursor: pointer;
 }
-
-/* irwm - form
-.contact-form {
-  border: 2px solid rgb(235, 147, 143);
-  border-radius: 10px;
-  text-align: left;
-  padding: 1rem;
-  display: inline-block;
-  -webkit-box-shadow: 5px 0px 35px 1px rgba(0, 0, 0, 0.45);
-  box-shadow: 5px 0px 35px 1px rgba(0, 0, 0, 0.45);
-}
-
-.form--email,
-.form--subject,
-.form--message {
-  margin: 2rem auto;
-}
-
-.contact-us--client-email-button {
-  background: #991d57 linear-gradient(bottom, #8c1c50 0%, #991d57 52%);
-  border-radius: 10px;
-  border: none;
-  padding-inline: 0.5rem;
-  
-}
-.contact-us--client-email-button:hover {
-  background-image: linear-gradient(bottom, #9c215a 0%, #a82767 52%);
-  transition: background-color 0.3s ease-in-out;
-  cursor: pointer;
-  color: var(--color-bg-white);
-}
-
-.form--button-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.form--button {
-  background-color: var(--color-bg-white);
-  padding: 0.5rem 1rem;
-  margin-top: 2rem;
-}
-*/
-
-/* IMPORTED CONTACT FORM */
-
-/* Contact Form Styles */
-
-/* .contact-form--intro h1 h4 {
-  color: #c0c0c0;
-  font-family: Arial, san-serif;
-} */
-
-.imported-form--wrapper {
-  padding: 0 1rem;
-}
-
-#contact-form {
-  background-color: rgba(72, 72, 72, 0.9);
-  padding: 10px 20px 30px 20px;
-  max-width: 400px;
-  margin: 0 auto;
-  border-radius: 7px;
-  -webkit-border-radius: 7px;
-  color: #c0c0c0;
-}
-
-.contact-form--intro h1 {
-  margin: 10px 0 0 0;
-}
-.contact-form--intro h4 {
-  margin: 0 0 20px 0;
-}
-
-#contact-form input,
-#contact-form select,
-#contact-form textarea,
-#contact-form label {
-  font-size: 15px;
-  margin-bottom: 2px;
-  font-family: Arial, san-serif;
-}
-#contact-form input,
-#contact-form select,
-#contact-form textarea {
-  width: 100%;
-  background: #fff;
-  border: 0;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  margin-bottom: 25px;
-  padding: 5px;
-}
-#contact-form input:focus,
-#contact-form select:focus,
-#contact-form textarea:focus {
-  background-color: #e5e6e7;
-}
-#contact-form textarea {
-  width: 100%;
-  height: 150px;
-}
-#contact-form button[type="submit"] {
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  background: #991d57;
-  background-image: linear-gradient(bottom, #8c1c50 0%, #991d57 52%);
-  background-image: -moz-linear-gradient(bottom, #8c1c50 0%, #991d57 52%);
-  background-image: -webkit-linear-gradient(bottom, #8c1c50 0%, #991d57 52%);
-  color: #fff;
-  margin: 0 0 5px;
-  padding: 10px;
-  border-radius: 5px;
-}
-#contact-form button[type="submit"]:hover {
-  background-image: linear-gradient(bottom, #9c215a 0%, #a82767 52%);
-  background-image: -moz-linear-gradient(bottom, #9c215a 0%, #a82767 52%);
-  background-image: -webkit-linear-gradient(bottom, #9c215a 0%, #a82767 52%);
-  /* -webkit-transition: background-image 0.3s ease-in-out;
-  -moz-transition: background-image 0.3s ease-in-out; */
-  transition: all 0.3s ease-in-out;
-}
-#contact-form button[type="submit"]:active {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-input:required,
-textarea:required {
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  -o-box-shadow: none;
-}
-#contact-form .required {
-  font-weight: bold;
-  color: #e5e6e7;
-}
-
-/* Hide success/failure message
-    (especially since the php is missing) */
-#failure,
-#success {
-  color: #6ea070;
-  display: none;
-}
-
-/* Make form look nice on smaller screens */
-/* @media only screen and (max-width: 580px) {
-  #contact-form {
-    left: 3%;
-    margin-right: 3%;
-    width: 88%;
-    margin-left: 0;
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-} */
 
 .email-link a {
   text-decoration: none;
