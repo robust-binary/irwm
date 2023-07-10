@@ -7,9 +7,11 @@
 :root {
   --color-bg-cream: rgb(248, 247, 243);
   --color-bg-white: rgb(255, 255, 255);
+  --color-bg-charcoal: rgb(71, 71, 71);
 
   --ff-standard: "PT Serif", serif;
   --ff-color-standard: rgba(71, 71, 71, 0.8);
+  --ff-color-white: rgb(255, 255, 255);
 
   --fs-standard: 16px;
   --fs-heading: 47px;
@@ -25,7 +27,7 @@ body {
 }
 .container {
   max-width: 1200px;
-  min-width: 400px;
+  min-width: 300px;
   margin-inline: auto;
   overflow-x: hidden;
 }
@@ -75,12 +77,12 @@ body {
 .explore-web-design p {
   text-align: center;
   margin: 3.5rem 0;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
 .computer-hands {
-  max-width: 400px;
+  max-width: 200px;
 }
 .computer-hands img {
   width: 100%;
@@ -105,7 +107,7 @@ body {
 }
 
 .morph-at-desk {
-  max-width: 400px;
+  max-width: 200px;
 }
 .morph-at-desk img {
   width: 100%;
@@ -120,7 +122,7 @@ body {
 .design-prod-card p {
   text-align: center;
   margin: 3.5rem 0;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
@@ -137,7 +139,7 @@ body {
   border: 2px solid rgb(235, 147, 143);
   background-color: var(--color-bg-cream);
   max-width: 550px;
-  min-width: 420px;
+  /* min-width: 320px; */
   padding: 1rem;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
@@ -206,7 +208,7 @@ body {
   border: 2px solid rgb(235, 147, 143);
   background-color: var(--color-bg-cream);
   max-width: 550px;
-  min-width: 420px;
+  /* min-width: 320px; */
   padding: 1rem;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
@@ -272,7 +274,7 @@ body {
 
 /* Quote */
 .quote {
-  background-color: var(--color-bg-cream);
+  background-color: var(--color-bg-charcoal);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -283,6 +285,7 @@ body {
 .quote p {
   text-align: center;
   font-size: 1.2em;
+  color: var(--ff-color-white);
 }
 
 /* About us */
@@ -295,7 +298,7 @@ body {
 }
 
 .computer-screen-on-stand {
-  max-width: 400px;
+  max-width: 200px;
 }
 .computer-screen-on-stand img {
   width: 100%;
@@ -311,7 +314,7 @@ body {
 .about-us p {
   text-align: center;
   margin: 3.5rem 0;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 .about-us .about-us--blurb-info {
@@ -332,7 +335,7 @@ body {
   padding: 1.5rem;
 }
 .morph-cog {
-  max-width: 400px;
+  max-width: 200px;
 }
 .morph-cog img {
   width: 100%;
@@ -348,7 +351,7 @@ body {
 .web-maintenance p {
   text-align: center;
   margin: 3.5rem 0;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
